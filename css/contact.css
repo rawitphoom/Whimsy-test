@@ -1,0 +1,105 @@
+/************************** OUR STORY HEADER SECTION ***************************/
+.support-header {
+    position: relative;
+}
+
+.support-header img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 50vh;
+}
+
+.support-header h3,
+.support-header h2 {
+    color: white;
+    white-space: nowrap;
+    /*Prevents text wrapping*/
+}
+
+.support-header-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%); 
+    ensures the text remains centered regardless of screen size*/
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .support-header img {
+        padding-top: 0rem;
+    }
+
+    .support-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .support-header h3 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Ipad */
+@media (max-width: 1024px) {
+    .support-header img {
+        padding-top: 5rem;
+    }
+}
+
+/****************************************************************************/
+
+/************************** SUPPORT TICKET SECTION **************************/
+.support-ticket {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.support-ticket h2 {
+    margin-bottom: 5rem;
+}
+
+/* Style */
+.support-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Input Field */
+.support-form input,
+.support-form textarea {
+    padding: 1rem;
+    border: 2px solid #FDC5CC;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.support-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #FDC5CC;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #ffb6c1;
+    transform: translateY(-2px);
+}
+
+/****************************************************************************/

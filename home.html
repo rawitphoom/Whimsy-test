@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimsy Bites</title>
+
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!---------------------------- NAVIGATION BAR ----------------------------->
+    <header>
+        <nav class="style-guide-nav">
+
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="./home.html">WHIMSY BITES</a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="main-navigation">
+                <a href="./story.html">Story</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./cart.html">Cart</a>
+            </div>
+        </nav>
+
+        <!-- Scrollable Horizontal Navigation -->
+        <nav class="mobile-nav">
+            <div class="mobile-nav-container">
+                <a href="./home.html" class="logo">WHIMSY BITES</a>
+            </div>
+
+            <div class="horizontal-scroll-menu">
+                <a href="./story.html">Story</a>
+                <span class="divider">|</span>
+                <a href="./shop.html">Shop</a>
+                <span class="divider">|</span>
+                <a href="./contact.html">Contact</a>
+                <span class="divider">|</span>
+                <a href="./cart.html">Cart</a>
+            </div>
+        </nav>
+    </header>
+    <!---------------------------------------------------------------------------------->
+
+
+    <!------------------------------------ HERO -------------------------------------->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>AWARD WINNING FLAVOR</h2>
+            <p>
+                Crunchy, chocolate cone filled with creamy white chocolate that will remind
+                you of your favorite nostalgic flavor combo, cookies‘n cream. Winner of the
+                2023 PEOPLE Food Awards for best sweet snack!
+            </p>
+            <!-- <a href="./shop.html"><button class="shop-now">SHOP NOW</button></a> -->
+            <button class="shop-now" onclick="window.location.href='./shop.html'">SHOP NOW</button>
+
+        </div>
+
+        <div class="hero-image">
+            <!-- Add visual description of the image to alt text -->
+            <img src="image_v2/hero_img.png" alt="hero-image">
+        </div>
+    </section>
+    <!---------------------------------------------------------------------------------->
+
+
+    <!------------------------------------ WHO-WE-ARE -------------------------------------->
+    <section class="who-we-are">
+        <div class="who-we-are-image">
+            <picture>
+                <source srcset="image_v2/who-we-are-mobile.png" media="(max-width: 768px)">
+                <source srcset="image_v2/who-we-are.png" media="(min-width: 769px)">
+                <img src="image_v2/who-we-are.png" alt="pink-square-blocks-background">
+            </picture>
+
+        </div>
+
+        <div class="who-we-are-wrap">
+            <h2>Who We Are</h2>
+            <h3>Sweet & Fun</h3>
+            <button class="who-we-are-button">OUR STORY</button>
+        </div>
+    </section>
+    <!---------------------------------------------------------------------------------->
+
+
+    <!------------------------------------ TESTIMONIALS -------------------------------------->
+    <section class="what-people-have-to-say">
+        <h2>What People Have To Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="what-people-have-to-say-image-color">
+                    <img src="image_v2/icecream.png" alt="Ice Cream">
+                </div>
+                <div class="testimonial-inside-card-wrap">
+                    <p class="stars">★ ★ ★ ★ ★</p>
+                    <h4>So Delicious!</h4>
+                    <p class="testimonial-text">
+                        Absolutely perfect size to snack on and oh are they good! Like they say, the best part of a
+                        sundae
+                        cone in a bite-size piece. We love them!
+                    </p>
+                    <p class="author">Hannah E.</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="what-people-have-to-say-image-color">
+                    <img src="image_v2/burger.png" alt="Burger">
+                </div>
+                <div class="testimonial-inside-card-wrap">
+                    <p class="stars">★ ★ ★ ★ ★</p>
+                    <h4>You Won’t Stop!</h4>
+                    <p class="testimonial-text">
+                        You cannot eat just one. In fact, the first bag I opened, I ate the entire bag! Kept putting my
+                        hand
+                        in until "Wait, where did they all go?"
+                    </p>
+                    <p class="author">Tiffany R.</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="what-people-have-to-say-image-color">
+                    <img src="image_v2/sundae_nobg.png" alt="Cupcake">
+                </div>
+                <div class="testimonial-inside-card-wrap">
+                    <p class="stars">★ ★ ★ ★ ★</p>
+                    <h4>Easy to Order!</h4>
+                    <p class="testimonial-text">
+                        I’ve always loved the tip of a sundae cone, and these are the perfect treat! Fast shipping and
+                        amazing quality, you need to try these ASAP!
+                    </p>
+
+                    <p class="author">Madison P.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------------------------------------------------->
+
+    <!------------------------------------ EMAIL -------------------------------------->
+
+    <section class="maillist-section">
+        <!-- style="width: 300px; margin: auto; text-align: center;" -->
+        <h2>Subscribe to Whimsy Bitest</h2>
+        <p>Join for new flavors, sales, recipes, & more!</p>
+        <form  action="/submit-your-form-handler" method="POST" class="maillist-form">
+            <input type="email" id="email" name="email" placeholder="Enter your email...">
+            <button type="submit">Join Our Newsletter</button>
+        </form >
+    </section>
+
+    <!---------------------------------------------------------------------------------->
+
+
+    <!------------------------------------ FIND US ONLINE -------------------------------------->
+
+    <section class="find-us-online">
+        <div class="find-us-online-wrap">
+            <h2>Find Us Online...</h2>
+            <h3>Order Anytime!</h3>
+            <img src="image_v2/find-us-online-img.png" alt="hamburger-with-friends">
+            <button class="find-us-online-button">SHOP NOW</button>
+        </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------->
+
+    <!---------------------------- FOOTER SECTION ------------------------------------>
+    <hr>
+    <footer>
+        <a href="./shop.html">SHOP</a>
+        <a href="./story.html">OUR STORY</a>
+        <a href="./contact.html">CONTACT US</a>
+        <a href="./index.html">STYLE GUIDE</a>
+    </footer>
+    <!---------------------------------------------------------------------------------->
+</body>
+
+</html>

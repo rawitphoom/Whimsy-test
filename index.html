@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHIMSY BITES - Style Guide </title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="style-guide-nav">
+      <div class="logo">
+        <a href="#">WHIMSY BITES</a>
+      </div>
+
+      <!-- Navigation links to different sections of the style guide -->
+      <div class="nav-links">
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="#citations">Citations</a>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <section id="HERO">
+
+    <!-- <div class="hero-image">
+      <img src="images/bubbletea_noshadow.png" alt="Bubble Tea" width="500" height="auto">
+    </div> -->
+    <div class="hero-content">
+      <h1>WHIMSY BITES </h1>
+      <h2>Style Guide</h2>
+      <a class="hero-button" href="home.html">Visit Website</a>
+    </div>
+
+  </section>
+
+
+
+
+  <!----------------------- START INTERACTIVE ELEMENTS SECTION ------------------------->
+  <main>
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- IN-TEXT LINK | Default Button styling section -->
+      <div class="grid-table">
+        <!-- Row 1 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 1;">In-text Link</div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+          <div class="cell-content">
+            <!-- use span because it works better for multiple 
+             inline elements without disrupt the flow
+             in other hand <p> creates blocks not good bc
+              this would add unnecessary vertical spacing -->
+            <span class="label">CSS Selector</span>
+            <span>.link-text</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 2;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 2;">
+          <div class="cell-content">
+            <span class="label">Sample Code</span>
+            <code>&lt;a class="link-text" href="#interactive_elements"&gt;Link&lt;/a&gt;</code>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 3;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 3;">
+          <div class="cell-content">
+            <span class="label">Rendered Element</span>
+            <a class="link-text" href="#interactive_elements">Link</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- NAVIGATION LINK | Default Button styling section -->
+      <div class="grid-table">
+        <!-- Row 1 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Navigation Link</div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+          <div class="cell-content">
+            <span class="label">CSS Selector</span>
+            <span>.button-nav</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 2;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 2;">
+          <div class="cell-content">
+            <span class="label">Sample Code</span>
+            <code>&lt;a class="button-nav" href="#">Default Button"&gt;Link&lt;/a&gt;</code>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 3;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 3;">
+          <div class="cell-content">
+            <span class="label">Rendered Element</span>
+            <a class="button-nav" href="#">Default Button</a>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+
+      <!-- TEXT INPUT FIELD WITH LABEL | Default Button styling section -->
+      <div class="grid-table">
+        <!-- Row 1 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Text Input Field with Label</div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+          <div class="cell-content">
+            <span class="label">CSS Selector</span>
+            <span>.form-label</span>
+            <span>.form-input</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 2;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 2;">
+          <div class="cell-content">
+            <span class="label">Sample Code</span>
+            <code>&lt;label for="nameInput" class="form-label"&gt;Name:&lt;/label&gt;</code>
+            <code>&lt;input type="text" name="name" id="nameInput" class="form-label"&gt;</code>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 3;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 3;">
+          <div class="cell-content">
+            <span class="label">Rendered Element</span>
+            <!-- For name text input -->
+            <label for="nameInput" class="form-label">Name:</label>
+            <input type="text" name="name" id="nameInput" class="form-input">
+          </div>
+        </div>
+      </div>
+
+      <!-- For comments -->
+      <!-- <label for="comment" id="test">Comment</label>
+        <textarea name="comment"></textarea> -->
+
+      <hr>
+
+      <!-- IMAGE AS A LINK | Default Button styling section -->
+      <div class="grid-table">
+        <!-- Row 1 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Image as a Link</div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+          <div class="cell-content">
+            <span class="label">CSS Selector</span>
+            <span>.image-wrapper</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 2;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 2;">
+          <div class="cell-content">
+            <span class="label">Sample Code</span>
+            <code>
+              &lt;a href="#" class="image-wrapper"&gt;
+                  &lt;img src="images/burger.png" alt="Burger Image" width="300" height="auto"&gt;
+              &lt;/a&gt;
+              </code>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 3;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 3;">
+          <div class="cell-content">
+            <span class="label">Rendered Element</span>
+            <!--image hyperlink -->
+            <a href="#" class="image-wrapper">
+              <img src="images/burger.png" alt="Burger Image" width="300">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!------------------------- END INTERACTIVE ELEMENTS SECTION ------------------------->
+
+
+
+    <!------------------------- START TEXT ELEMENTS SECTION ------------------------->
+    <h2 id="texth2">Text Elements</h2>
+    <section id="text_elements">
+
+      <div class="grid-table">
+        <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Four levels of headings</div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+          <div class="cell-content">
+            <span class="label">CSS Selector</span>
+            <span>.cell-content h1, <br>
+              .cell-content h2, <br>
+              .cell-content h3, <br>
+              .cell-content h4</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 2;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 2;">
+          <div class="cell-content">
+            <span class="label">Sample Code</span>
+            <code>
+          &lt;h1&gt;Heading1&lt;/h1&gt;
+          &lt;h2&gt;Heading2&lt;/h2&gt;
+          &lt;h3&gt;Heading3&lt;/h3&gt;
+          &lt;h4&gt;Heading4&lt;/h4&gt;
+        </code>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="grid-cell" style="grid-column: 1; grid-row: 3;"></div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 3;">
+          <div class="cell-content">
+            <span class="label">Rendered Element</span>
+            <h1>Heading1</h1>
+            <h2>Heading2</h2>
+            <h3>Heading3</h3>
+            <h4>Heading4</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Paragraph with placeholder text -->
+
+    <div class="grid-table">
+      <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Paragraphs</div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+        <div class="cell-content">
+          <span class="label">CSS Selector</span>
+          <span>p</span>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="grid-cell" style="grid-column: 1; grid-row: 2;"></div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 2;">
+        <div class="cell-content">
+          <span class="label">Sample Code</span>
+          <code>
+                  &lt;p&gt;Welcome to Whimsy Bites Co., where snacks meet smiles! 
+                  From playful pink burgers to cheerful bubble teas and happy fries, 
+                  we create treats that are as fun to look at as they are to eat. 
+                  Crafted with care and packed with joy, our snacks bring a burst of 
+                  flavor and happiness to every bite. Experience food that’s whimsical, 
+                  delicious, and guaranteed to brighten your day!&lt;/p&gt;
+                </code>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="grid-cell" style="grid-column: 1; grid-row: 3;"></div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 3;">
+        <div class="cell-content">
+          <span class="label">Rendered Element</span>
+          <p> Welcome to Whimsy Bites Co., where snacks meet smiles!
+            From playful pink burgers to cheerful bubble teas and happy fries,
+            we create treats that are as fun to look at as they are to eat.
+            Crafted with care and packed with joy, our snacks bring a burst of
+            flavor and happiness to every bite. Experience food that’s whimsical,
+            delicious, and guaranteed to brighten your day!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- NUMBER LISTS -->
+    <div class="grid-table">
+      <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Number Lists</div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+        <div class="cell-content">
+          <span class="label">CSS Selector</span>
+          <span>.number-list</span>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="grid-cell" style="grid-column: 1; grid-row: 2;"></div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 2;">
+        <div class="cell-content">
+          <span class="label">Sample Code</span>
+          <code>
+                  &lt;ol type="1" class="number-list"&gt;
+                    &lt;li&gt; First option &lt;/li&gt;
+                    &lt;li&gt; Second option &lt;/li&gt;
+                  &lt;/ol&gt;
+                </code>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="grid-cell" style="grid-column: 1; grid-row: 3;"></div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 3;">
+        <div class="cell-content">
+          <span class="label">Rendered Element</span>
+          <ol type="1" class="number-list">
+            <li> First option </li>
+            <li> Second option </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!------------------------- END TEXT ELEMENTS SECTION ------------------------->
+
+
+
+    <!-- ----------------------- START COMBINED ELEMENTS SECTION ------------------------->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <div class="grid-table">
+        <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Main Navigation</div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+          <div class="cell-content">
+            <nav class="main-navigation">
+              <!-- Navigation links to different sections of the style guide -->
+              <a href="#Home">Home</a>
+              <a href="#Product">Product</a>
+              <a href="#Contact">Contact</a>
+              <a href="#cart">Cart</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="grid-table">
+        <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Product/Service Listing</div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+          <div class="cell-content">
+            <img src="images/burger.png" alt="Burger Image" width="300">
+            <h3>Flashy Burger</h3>
+            <p>Meet the Flashy Burger – a fun and colorful take on
+              the classic burger. Packed with fresh ingredients and a
+              playful design, it’s made to turn heads and satisfy your cravings.
+              A burger that’s as bold in flavor as it is in style!
+            </p>
+            <h3>$15</h3>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="grid-table">
+        <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Maillist sign-up form</div>
+        <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+          <div class="cell-content">
+            <section class="maillist-section">
+              <!-- style="width: 300px; margin: auto; text-align: center;" -->
+              <h3>Subscribe to Whimsy Bites</h3>
+              <p>Join for new flavors, sales, recipes, & more!</p>
+              <form action="/submit-your-form-handler" method="POST" class="maillist-form">
+                <input type="email" id="email" name="email" placeholder="Enter your email...">
+                <button type="submit">Join Our Newsletter</button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------- END COMBINED ELEMENTS SECTION ------------------------->
+    <hr>
+
+    <div class="grid-table">
+      <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Description of the product</div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+        <div class="cell-content">
+          <section class="description">
+            <span>Meet the Flashy Burger – a fun and colorful take on
+              the classic burger. Packed with fresh ingredients and a
+              playful design, it’s made to turn heads and satisfy your cravings.
+              A burger that’s as bold in flavor as it is in style!
+            </span>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <div class="grid-table">
+      <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Color Palette</div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+        <div class="cell-content">
+          <span>
+            These colors are great for a food website. The soft green (#86A788)
+            gives a fresh and natural look, while the light yellow (#FFFDEC)
+            feels warm and welcoming. The pink shades (#FFE2E2 and #FFCFCF) add a
+            fun and cheerful vibe, making the site feel inviting and friendly.
+          </span>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="grid-cell" style="grid-column: 1; grid-row: 2;"></div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 2;">
+        <div class="cell-content">
+          <section class="color-palette">
+            <div class="color-wrap">
+              <div class="color-box">
+                <div class="color-swatch" style="background-color: #FFFDEC;"></div>
+                <p>#FFFDEC</p>
+              </div>
+              <div class="color-box">
+                <div class="color-swatch" style="background-color: #FFE2E2;"></div>
+                <p>#FFE2E2</p>
+              </div>
+              <div class="color-box">
+                <div class="color-swatch" style="background-color: #FFD6DD;"></div>
+                <p>#FFD6DD</p>
+              </div>
+              <div class="color-box">
+                <div class="color-swatch" style="background-color: #FFCFCF;"></div>
+                <p>#FFCFCF</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="grid-table">
+      <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Fonts</div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+        <div class="cell-content">
+          <span>The Poppins font was chosen because it is simple,
+            modern, and easy to read. It matches the fun and bright
+            theme of the website while making the text clear and neat.
+          </span>
+          <img src="images/poppins.png" alt="font Image" width="400">
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="grid-cell" style="grid-column: 1; grid-row: 2;"></div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 2;">
+        <div class="cell-content">
+          <span>Manrope offering a clean and modern look that enhances readability.
+            Its versatility helps highlight the playful and vibrant elements of
+            the site while keeping the design fresh and appetizing.</span>
+          <img src="images/manrope.png" alt="font Image" width="250">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="grid-table">
+      <div class="grid-cell" style="grid-column: 1; grid-row: 1;">Images</div>
+      <div class="grid-cell" style="grid-column: 2; grid-row: 1;">
+        <div class="cell-content">
+          <section id="images">
+            <img src="images/frenchfries.webp" alt="frenchfries Image" width="300">
+            <img src="images/banana.webp" alt="banana Image" width="300">
+            <img src="images/bubbletea.webp" alt="bubbletea Image" width="300">
+            <img src="images/icecream.webp" alt="icecream Image" width="300">
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Citations section with proper HTML citation format -->
+    <section id="citations">
+      <h2>Citations</h2>
+      <ul>
+        <li>Color Hunt. (n.d.). <i>Palette: 86A788 FFFDEC FFE2E2 FFCFCF</i>. Retrieved from <a
+            href="https://colorhunt.co/palette/86a788fffdecffe2e2ffcfcf">https://colorhunt.co/palette/86a788fffdecffe2e2ffcfcf</a>
+        </li>
+        <li>Google Fonts. (n.d.). <i>Poppins</i>. Retrieved from <a
+            href="https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</a>.</li>
+        <li>McMaster University. (n.d.). <i>Typography</i>. Retrieved from <a
+            href="https://brand.mcmaster.ca/guidelines_introduction/visual-identity-guidelines/typography/">https://brand.mcmaster.ca/guidelines_introduction/visual-identity-guidelines/typography/</a>
+        </li>
+        <li>Google Fonts. (n.d.). <i>Manrope.</i> Retrieved from <a
+            href="https://fonts.google.com/specimen/Manrope">https://fonts.google.com/specimen/Manrope</a>
+        </li>
+        <li>OpenAI. (2025). <i>ChatGPT. [Images generated by an AI model].</i> Retrieved from <a
+            href="https://chat.openai.com">https://chat.openai.com</a>
+        </li>
+      </ul>
+
+    </section>
+  </main>
+</body>
+
+</html>

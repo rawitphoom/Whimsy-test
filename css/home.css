@@ -1,0 +1,406 @@
+
+
+/************************* HERO SECTION*********************/
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7rem;
+    padding: 5rem;
+    /* border: 3px solid red; */
+    /* display: none; */
+}
+
+.hero-content {
+    margin-top: 3rem;
+    max-width: 40%;
+    /* border: 3px solid red; */
+}
+
+.hero button {
+    background-color: #FDC5CC;
+    color: white;
+    padding: 0.8rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #fdc5ccd0;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 11rem;
+        /* border: 3px solid red; */
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .hero-content {
+        margin-top: 0rem;
+        max-width: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        width: 100vw;
+        height: auto;
+        /* border: 3px solid red; */
+
+    }
+
+}
+
+/***************************************************************/
+
+
+/************************** WHO-WE-ARE SECTION ***************************/
+.who-we-are {
+    position: relative;
+}
+
+.who-we-are-wrap img {
+    display: block;
+}
+
+.who-we-are h3 {
+    white-space: nowrap;
+    /*Prevents text wrapping*/
+}
+
+
+.who-we-are-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%); 
+    ensures the text remains centered regardless of screen size*/
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.who-we-are button {
+    background-color: #FDC5CC;
+    color: white;
+    padding: 0.8rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin-top: 1.5rem;
+    white-space: nowrap;
+}
+
+.who-we-are button:hover {
+    background-color: #fdc5ccd0;
+}
+
+@media (max-width: 768px) {
+    /* .who-we-are {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 9rem;
+        border: 3px solid red;
+    } */
+
+    .who-we-are h2 {
+        font-size: 1.8rem;
+    }
+
+    .who-we-are h3 {
+        font-size: 2.5rem;
+    }
+
+    .who-we-are button {
+        padding: 0.8rem 4rem;
+        /* Reduce padding for mobile */
+        font-size: 1.2rem;
+        /* Make text smaller */
+    }
+}
+
+/**************************************************************************/
+
+/************************** TESTIMONIAL SECTION ***************************/
+.what-people-have-to-say {
+    text-align: center;
+    padding: 5rem 2rem;
+    /* border: 3px solid red; */
+}
+
+.what-people-have-to-say h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #2E2E2E;
+    margin-bottom: 2rem;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    justify-items: center;
+    /* border: 3px solid red; */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.testimonial-card {
+    background: #FDC5CC;
+    border-radius: 15px;
+    /* padding: 2rem; */
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* border: 3px solid red; */
+}
+
+.what-people-have-to-say-image-color {
+    background-color: #FFE8EB;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 2rem;
+}
+
+.testimonial-inside-card-wrap {
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+}
+
+.stars {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
+}
+
+.testimonial-card h4 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: white;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    line-height: 1.5;
+    margin-top: 0;
+    padding-top: 1rem;
+    /* border: 3px solid red; */
+}
+
+.author {
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .what-people-have-to-say h2 {
+        font-size: 2rem;
+    }
+
+    .what-people-have-to-say h4 {
+        font-size: 1.5rem;
+    }
+
+    .stars {
+        font-size: 1.2rem;
+    }
+}
+
+/* Ipad */
+@media (max-width: 1024px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/**************************************************************************/
+
+/********************************* MAILLIST *******************************/
+.maillist-section {
+    background-color: #FDC5CC;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.2);
+}
+
+.maillist-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.maillist-section p {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* form styling */
+.maillist-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Input field */
+.maillist-form input {
+    background-color: #FDC5CC;
+    width: 100%;
+    max-width: 400px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    text-align: left;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* IMPORTANT | To make border box evenly, padding and border are included in total width/height */
+    box-sizing: border-box;
+}
+
+.maillist-form ::placeholder {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.maillist-form input:hover {
+    border-color: white;
+}
+
+/* Submit button */
+.maillist-form button {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    color: #FDC5CC;
+    border: none;
+    padding: 0.8rem 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.maillist-section button:hover {
+    background-color: #FDC5CC;
+    color: white;
+    border: 1px solid white;
+    transform: translateY(-4px);
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    .maillist-section p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Ipad */
+@media (max-width: 1024px) {
+    .maillist-section h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .maillist-section p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/**************************************************************************/
+
+/********************************* FIND US ONLINE *************************/
+.find-us-online {
+    padding: 5rem;
+    /* border: 3px solid green; */
+}
+
+.find-us-online-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.find-us-online img {
+    margin: 0 auto;
+    padding-left: 4.5rem;
+    max-width: 700px;
+    /* border: 3px solid red; */
+}
+
+.find-us-online button {
+    background-color: #FDC5CC;
+    color: white;
+    padding: 0.8rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 25px;
+    transition: 0.3s;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.find-us-online button:hover {
+    background-color: #fdc5ccd0;
+}
+@media (max-width: 768px) {
+    .find-us-online {
+        padding: 0;
+        margin: 0;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        /* border: 3px solid red; */
+
+
+    }
+
+    .find-us-online h3 {
+        font-size: 2rem;
+    }
+
+    .find-us-online img {
+        padding: 0;
+        max-width: 300px;
+    }
+}
+
+/* Ipad */
+/* @media (max-width: 1024px) {} */
+
+/**************************************************************************/
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimsy Bites</title>
+
+    <link href="css/checkout.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!---------------------------- NAVIGATION BAR --------------------------------------->
+    <header>
+        <nav class="style-guide-nav">
+
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="./home.html">WHIMSY BITES</a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="main-navigation">
+                <a href="./story.html">Story</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./cart.html">Cart</a>
+            </div>
+        </nav>
+
+        <!-- Scrollable Horizontal Navigation -->
+        <nav class="mobile-nav">
+            <div class="mobile-nav-container">
+                <a href="./home.html" class="logo">WHIMSY BITES</a>
+            </div>
+
+            <div class="horizontal-scroll-menu">
+                <a href="./story.html">Story</a>
+                <span class="divider">|</span>
+                <a href="./shop.html">Shop</a>
+                <span class="divider">|</span>
+                <a href="./contact.html">Contact</a>
+                <span class="divider">|</span>
+                <a href="./cart.html">Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <!---------------------------------------------------------------------------------->
+
+    <h1 class="checkout-title">Check Out</h1>
+
+    <div class="checkout-container">
+        <!-- LEFT SIDE: FORM -->
+        <div class="checkout-form">
+            <!-- CONTACT -->
+            <h2>Contact</h2>
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Phone">
+
+            <!-- DELIVERY -->
+            <h2>Delivery</h2>
+            <input type="text" placeholder="Country">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Last name">
+                </div>
+            </div>
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="Apartment, suite, etc. (optional)">
+            <div class="input-group">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Province">
+            </div>
+            <input type="text" placeholder="Postal code">
+
+            <!-- Shipping Method -->
+            <h2>Shipping Method</h2>
+            <div class="shipping-method">
+                <label>
+                    <input type="radio" name="shipping" checked>
+                    <span>Standard</span> <b>Free</b>
+                </label>
+                <label>
+                    <input type="radio" name="shipping">
+                    <span>Express</span> <b>$10.00</b>
+                </label>
+            </div>
+
+            <!-- Payment -->
+            <h2>Payment</h2>
+            <input type="text" placeholder="Card number">
+            <div class="input-group">
+                <input type="text" placeholder="Expiration (MM/YY)">
+                <input type="text" placeholder="Security code">
+            </div>
+            <input type="text" placeholder="Name on card">
+
+            <button class="pay-now">Pay Now</button>
+        </div>
+
+        <!-- RIGHT SIDE: ORDER SUMMARY -->
+        <div class="checkout-summary">
+            <!-- <div class="checkout-wrap"> -->
+            <div class="summary-item">
+                <img src="image_v2/jelly_nobg_resize.png" alt="Whimsy Jello">
+                <div class="summary-info">
+                    <p class="summary-title">Whimsy Jello</p>
+                </div>
+                <p class="summary-price">$7.99</p>
+            </div>
+            <p class="summary-qty">Qty: 1</p>
+
+
+            <div class="summary-subtotal">
+                <p>Subtotal</p>
+                <p>$7.99</p>
+            </div>
+            <div class="summary-total">
+                <p>Total</p>
+                <p>$8.99</p>
+            </div>
+            <!-- Pay Now Button for Mobile -->
+            <button class="pay-now mobile-only">Pay Now</button>
+
+        </div>
+    </div>
+
+    <!---------------------------- FOOTER SECTION ------------------------------------>
+    <hr>
+    <footer>
+        <a href="./shop.html">SHOP</a>
+        <a href="./story.html">OUR STORY</a>
+        <a href="./contact.html">CONTACT US</a>
+        <a href="./index.html">STYLE GUIDE</a>
+    </footer>
+    <!---------------------------------------------------------------------------------->
+</body>
+
+</html>

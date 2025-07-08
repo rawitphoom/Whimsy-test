@@ -1,0 +1,548 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    /*For scrolling, navigation doesnot block*/
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    border-color: #FFFDEC;
+    /* border: 3px solid purple; */
+}
+
+h3 {
+    font-family: 'Manrope';
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    /* border: 3px solid green; */
+}
+
+/************************** NAV ***************************/
+header {
+    width: 100%;
+    background-color: #FDC5CC;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    /*include padding in width calculations*/
+    position: fixed;
+}
+
+.style-guide-nav {
+    /* background-color: #FFCFCF; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: right; */
+    /* padding: 10px 20px;*/
+    /* border-radius: 0.5rem; */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    /* border: 3px solid purple; */
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    background-color: #FDC5CC;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* border: 1px solid red; */
+}
+
+.nav-links a:hover {
+    background-color: #FFE2E2;
+    color: black;
+}
+
+.logo a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/***************************************************************/
+
+/************************** HERO ***************************/
+#HERO {
+    width: 100%;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*Centers item vertically*/
+    align-items: center;
+    /*Centers items horizontally*/
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    background-color: #FDC5CC;
+    text-align: center;
+    /* border: 2px solid red; */
+    margin-top: 5rem;
+
+}
+
+.hero-content {
+    padding: 1rem;
+    /* color: #FFFDEC; */
+    color: white;
+    /* border: 2px solid red; */
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    font-family: 'Manrope';
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    /* border: 2px solid red */
+}
+
+#HERO h2 {
+    font-family: 'Manrope';
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 0 2rem 0;
+    /* border: 2px solid red */
+}
+
+.hero-button {
+    background-color: white;
+    color: #FDC5CC;
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #FDC5CC;
+    color: white;
+    transform: scale(1.05);
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/***********************************************************/
+
+
+/* #interactive_elements{
+    border: 2px solid red;
+} */
+
+#text_elements h2:first-of-type {
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+#interactive_elements h2 {
+    text-align: left;
+    text-decoration: underline;
+    color: #FDC5CC;
+    font-size: 1.8rem;
+}
+
+#texth2 {
+    text-align: left;
+    text-decoration: underline;
+    color: #FDC5CC;
+    font-size: 1.8rem;
+}
+
+#combined_elements h2 {
+    text-align: left;
+    text-decoration: underline;
+    color: #FDC5CC;
+    font-size: 1.8rem;
+}
+
+#citations h2 {
+    text-align: left;
+    text-decoration: underline;
+    color: #FDC5CC;
+    font-size: 1.8rem;
+}
+
+.grid-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap:1rem; */
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.grid-cell {
+    /* border: 1px solid #ddd; */
+    padding: 0 0 1rem 0;
+    font-size: 1.3rem;
+}
+
+.cell-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label {
+    text-decoration: underline;
+    font-weight: 450;
+}
+
+/************************** LABEL NAME ***************************/
+.form-label {
+    font-size: 1rem;
+}
+
+.form-input {
+    width: 300px;
+    padding: 8px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    /* Text color */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:hover {
+    border-color: #FFCFCF;
+    outline: none;
+}
+
+/*****************************************************************/
+
+/************************** IMAGE ***************************/
+
+img {
+    max-width: 100%; /*stop image go beyond its container*/
+    height: auto;
+    display: block; /*Stop inline spacing issue*/
+  }
+  
+
+.image-wrapper img {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.image-wrapper:hover img {
+    transform: translateY(-15px);
+}
+
+/*****************************************************************/
+
+/************************** MAIN NAVIGATION ***************************/
+
+.main-navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-navigation a {
+    background-color: #FDC5CC;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* border: 1px solid red; */
+}
+
+.main-navigation a:hover {
+    color: white;
+    background-color: #FDC5CC;
+}
+
+/*****************************************************************/
+
+/************************** ADD TO CART BUTTON ***************************/
+.cell-content .add-to-cart {
+    width: 50%;
+    background-color: #FDC5CC;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.cell-content .add-to-cart:hover {
+    background-color: #FF9999;
+    /* Slightly darker hover color */
+    transform: scale(1.05);
+    /* Subtle zoom on hover */
+}
+
+/*****************************************************************/
+
+
+/************************** COLOR ***************************/
+.color-wrap {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.color-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid red; */
+
+}
+
+.color-swatch {
+    width: 4.6vw;
+    /*full width of container*/
+    height: 9.2vh;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+}
+
+/***************************************************************/
+
+
+/************************** MAILLIST ***************************/
+.maillist-section {
+    background-color: #FDC5CC;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.2);
+}
+
+.maillist-section h3 {
+    font-size: 2.5rem;
+    /* font-weight: bold; */
+    margin-bottom: 1rem;
+    /* border: 1px solid red; */
+}
+
+.maillist-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* form styling */
+.maillist-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Input field */
+.maillist-form input {
+    background-color: #FDC5CC;
+    width: 100%;
+    max-width: 400px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    text-align: left;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* IMPORTANT | To make border box evenly, padding and border are included in total width/height */
+    box-sizing: border-box;
+}
+
+.maillist-form input:hover {
+    border-color: white;
+}
+
+/* Submit button */
+.maillist-form button {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    color: #FDC5CC;
+    border: none;
+    padding: 0.8rem 20px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-family: 'Poppins';
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.maillist-section button:hover {
+    background-color: #FDC5CC;
+    color: white;
+    border: 1px solid white;
+    transform: translateY(-4px);
+}
+/***************************************************************/
+
+/************************** CITATION ****************************/
+#citations {
+    max-width: 100%; /*Stop it from exceeding screen size*/
+    padding: 1rem;
+    margin: auto; /*Center*/
+    overflow-wrap: break-word; /*URLS break to fit container*/
+    /* border: 3px solid red; */
+  }
+  
+/***************************************************************/
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    p{
+        font-size: 0.9rem;
+    }
+
+    #HERO{
+        margin-top: 30vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.8rem;
+        /* border: 2px solid red */
+    }
+    
+    #HERO h2 {
+        font-size: 1.8rem;
+    }
+
+    main{
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        /* border: 3px solid red; */
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 1.5rem;
+        gap: 1rem;
+        /* border: 3px solid green; */
+
+    }
+
+    .nav-links a {
+        text-align: center;
+        width: 100%;
+        /* border: 3px solid red; */
+    }
+
+    .style-guide-nav{
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        /* border: 3px solid red; */
+    }
+
+    .grid-table{
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center;
+        width: 100%; /* Ensure it fits the screen */
+    }
+    
+    .grid-cell {
+        /* border: 1px solid red; */
+        /* padding: 0 0 1rem 0; */
+        font-size: 1rem;
+        text-align: left;
+        width: 62%;
+    }
+    
+    .cell-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: left;
+        /* border: 1px solid purple; */
+        /* margin-left: 10rem; */
+        width: 100%;
+    }
+
+    
+    #interactive_elements h2,
+    #texth2,
+    #combined_elements h2,
+    #citations h2 {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .main-navigation {
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        /* align-items: center; */
+    }
+
+    .maillist-section h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .maillist-section p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .color-swatch {
+        width: 14vw;
+        height: 7vh;
+    }
+
+    #citations{
+        width: 90vw;
+    }
+}
